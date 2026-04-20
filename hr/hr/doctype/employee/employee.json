@@ -1,0 +1,587 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-17 11:22:12.109994",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_section",
+  "employee_id",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "gender",
+  "date_of_birth",
+  "marital_status",
+  "blood_group",
+  "nationality",
+  "aadhaar_number",
+  "pan_number",
+  "passport_number",
+  "personal_email",
+  "personal_phone",
+  "emergency_contact_name",
+  "emergency_contact_number",
+  "emergency_contact_relation",
+  "permanent_address",
+  "current_address",
+  "employment_type_section",
+  "employment_type",
+  "employment_status",
+  "date_of_joining",
+  "date_of_exit",
+  "confirmation_date",
+  "probation_period_months",
+  "notice_period",
+  "contract_start_date",
+  "contract_end_date",
+  "work_shift",
+  "employee_category",
+  "employee_grade",
+  "is_probation_completed",
+  "is_notice_period_active",
+  "last_working_day",
+  "branch_section",
+  "branch_name",
+  "branch_code",
+  "company",
+  "work_location",
+  "building_floor",
+  "desk_number",
+  "city",
+  "state",
+  "country",
+  "pin_code",
+  "company_email",
+  "company_phone",
+  "extension_number",
+  "sitting_location",
+  "work_mode",
+  "department_section",
+  "department",
+  "sub_department",
+  "reporting_manager",
+  "department_head",
+  "skip_level_manager",
+  "hr_manager",
+  "cost_center",
+  "business_unit",
+  "team_name",
+  "project_assigned",
+  "project_role",
+  "allocation_percentage",
+  "time_shift_required",
+  "designation_section",
+  "designation",
+  "job_title",
+  "job_role",
+  "job_level",
+  "grade",
+  "band",
+  "job_description",
+  "skills",
+  "primary_skill",
+  "secondary_skill",
+  "certification_detail",
+  "previous_experienceyears",
+  "total_experiencerelevant",
+  "last_company",
+  "last_drawn_salary",
+  "salary",
+  "offer_date",
+  "joining_bonus",
+  "bonus_eligibility"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_section",
+   "fieldtype": "Section Break",
+   "label": "Employee"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOthers"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "Single\nMarried"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Groud",
+   "options": "A+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "aadhaar_number",
+   "fieldtype": "Data",
+   "label": "Aadhaar Number"
+  },
+  {
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "PAN Number",
+   "length": 10
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport Number"
+  },
+  {
+   "fieldname": "personal_email",
+   "fieldtype": "Data",
+   "label": "Personal Email",
+   "length": 12
+  },
+  {
+   "fieldname": "personal_phone",
+   "fieldtype": "Data",
+   "label": "Personal Phone",
+   "length": 10
+  },
+  {
+   "fieldname": "emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Name"
+  },
+  {
+   "fieldname": "emergency_contact_number",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Number"
+  },
+  {
+   "fieldname": "emergency_contact_relation",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Relation"
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Small Text",
+   "label": "Current Address"
+  },
+  {
+   "fieldname": "employment_type_section",
+   "fieldtype": "Section Break",
+   "label": "Employment Type"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Select",
+   "label": "Employment Type",
+   "options": "Full Time\nPart Time\nIntern\nContract"
+  },
+  {
+   "fieldname": "employment_status",
+   "fieldtype": "Select",
+   "label": "Employment Status",
+   "options": "Active\nInactive\nNotice Period\nLeft"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date Of Joining"
+  },
+  {
+   "fieldname": "date_of_exit",
+   "fieldtype": "Date",
+   "label": "Date Of Exit"
+  },
+  {
+   "fieldname": "confirmation_date",
+   "fieldtype": "Date",
+   "label": "Confirmation Date"
+  },
+  {
+   "fieldname": "probation_period_months",
+   "fieldtype": "Int",
+   "label": "Probation Period(Months)"
+  },
+  {
+   "fieldname": "notice_period",
+   "fieldtype": "Int",
+   "label": "Notice Period"
+  },
+  {
+   "fieldname": "contract_start_date",
+   "fieldtype": "Date",
+   "label": "Contract Start Date"
+  },
+  {
+   "fieldname": "contract_end_date",
+   "fieldtype": "Date",
+   "label": "Contract End Date"
+  },
+  {
+   "fieldname": "work_shift",
+   "fieldtype": "Data",
+   "label": "Work Shift"
+  },
+  {
+   "fieldname": "employee_category",
+   "fieldtype": "Data",
+   "label": "Employee Category"
+  },
+  {
+   "fieldname": "employee_grade",
+   "fieldtype": "Data",
+   "label": "Employee Grade"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_probation_completed",
+   "fieldtype": "Check",
+   "label": "Is Probation Completed"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_notice_period_active",
+   "fieldtype": "Check",
+   "label": "Is Notice Period Active"
+  },
+  {
+   "fieldname": "last_working_day",
+   "fieldtype": "Date",
+   "label": "Last Working Day"
+  },
+  {
+   "fieldname": "branch_section",
+   "fieldtype": "Section Break",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "label": "Branch Code"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "work_location",
+   "fieldtype": "Data",
+   "label": "Work Location"
+  },
+  {
+   "fieldname": "building_floor",
+   "fieldtype": "Data",
+   "label": "Building/Floor"
+  },
+  {
+   "fieldname": "desk_number",
+   "fieldtype": "Data",
+   "label": "Desk Number"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "label": "Company Email"
+  },
+  {
+   "fieldname": "company_phone",
+   "fieldtype": "Data",
+   "label": "Company Phone"
+  },
+  {
+   "fieldname": "extension_number",
+   "fieldtype": "Data",
+   "label": "Extension Number"
+  },
+  {
+   "fieldname": "sitting_location",
+   "fieldtype": "Data",
+   "label": "Sitting Location"
+  },
+  {
+   "fieldname": "work_mode",
+   "fieldtype": "Select",
+   "label": "Work Mode",
+   "options": "Office\nRemote\nHybrid"
+  },
+  {
+   "fieldname": "department_section",
+   "fieldtype": "Section Break",
+   "label": "Department "
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "sub_department",
+   "fieldtype": "Data",
+   "label": "Sub Department"
+  },
+  {
+   "fieldname": "reporting_manager",
+   "fieldtype": "Link",
+   "label": "Reporting Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "department_head",
+   "fieldtype": "Link",
+   "label": "Department Head",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "skip_level_manager",
+   "fieldtype": "Link",
+   "label": "Skip Level Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "hr_manager",
+   "fieldtype": "Link",
+   "label": "Hr Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Data",
+   "label": "Cost Center"
+  },
+  {
+   "fieldname": "business_unit",
+   "fieldtype": "Data",
+   "label": "Business Unit"
+  },
+  {
+   "fieldname": "team_name",
+   "fieldtype": "Data",
+   "label": "Team Name"
+  },
+  {
+   "fieldname": "project_assigned",
+   "fieldtype": "Data",
+   "label": "Project Assigned"
+  },
+  {
+   "fieldname": "project_role",
+   "fieldtype": "Data",
+   "label": "Project Role"
+  },
+  {
+   "fieldname": "allocation_percentage",
+   "fieldtype": "Percent",
+   "label": "Allocation Percentage"
+  },
+  {
+   "default": "0",
+   "fieldname": "time_shift_required",
+   "fieldtype": "Check",
+   "label": "Time Shift Required"
+  },
+  {
+   "fieldname": "designation_section",
+   "fieldtype": "Section Break",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "job_role",
+   "fieldtype": "Data",
+   "label": "Job Role"
+  },
+  {
+   "fieldname": "job_level",
+   "fieldtype": "Data",
+   "label": "Job Level"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "band",
+   "fieldtype": "Data",
+   "label": "Band"
+  },
+  {
+   "fieldname": "job_description",
+   "fieldtype": "Small Text",
+   "label": "Job Description"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Small Text",
+   "label": "Skills"
+  },
+  {
+   "fieldname": "primary_skill",
+   "fieldtype": "Data",
+   "label": "Primary Skill"
+  },
+  {
+   "fieldname": "secondary_skill",
+   "fieldtype": "Data",
+   "label": "Secondary Skill"
+  },
+  {
+   "fieldname": "certification_detail",
+   "fieldtype": "Small Text",
+   "label": "Certification Detail"
+  },
+  {
+   "fieldname": "previous_experienceyears",
+   "fieldtype": "Float",
+   "label": "Previous Experience(Years)"
+  },
+  {
+   "fieldname": "total_experiencerelevant",
+   "fieldtype": "Float",
+   "label": "Total Experience(Relevant)"
+  },
+  {
+   "fieldname": "last_company",
+   "fieldtype": "Data",
+   "label": "Last Company"
+  },
+  {
+   "fieldname": "last_drawn_salary",
+   "fieldtype": "Currency",
+   "label": "Last Drawn Salary"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Link",
+   "label": "Salary",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "offer_date",
+   "fieldtype": "Date",
+   "label": "Offer Date"
+  },
+  {
+   "fieldname": "joining_bonus",
+   "fieldtype": "Currency",
+   "label": "Joining Bonus"
+  },
+  {
+   "default": "0",
+   "fieldname": "bonus_eligibility",
+   "fieldtype": "Check",
+   "label": "Bonus Eligibility"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-17 12:29:30.385916",
+ "modified_by": "Administrator",
+ "module": "Hr",
+ "name": "Employee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
