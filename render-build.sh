@@ -4,12 +4,13 @@ set -o errexit
 # 1. Install Bench
 pip install frappe-bench
 
-# 2. Build the Bench for Version 15 explicitly
-# We add --frappe-branch version-15 to avoid pulling the broken v16/develop
+# 2. Build the Bench for Version 15 
+# We add --skip-backups to prevent the 'crontab' error on Render
 bench init frappe-bench \
   --frappe-branch version-15 \
   --python python3.11 \
-  --skip-redis-config-generation
+  --skip-redis-config-generation \
+  --skip-backups
 
 cd frappe-bench
 
