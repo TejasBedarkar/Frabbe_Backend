@@ -10,7 +10,7 @@ bench init frappe-bench \
   --frappe-branch version-15 \
   --python python3.11 \
   --skip-redis-config-generation \
-  --skip-backups
+  --no-backups
 
 cd frappe-bench
 
