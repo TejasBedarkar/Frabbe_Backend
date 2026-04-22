@@ -4,14 +4,17 @@ set -o errexit
 # 1. Install Bench
 pip install frappe-bench
 
-# 2. Build the Bench folder
-# We skip redis check because we connect to Render's internal Redis later
-bench init --skip-redis-config-generation --python python3.11 frappe-bench
+# 2. Build the Bench for Version 15 explicitly
+# We add --frappe-branch version-15 to avoid pulling the broken v16/develop
+bench init frappe-bench \
+  --frappe-branch version-15 \
+  --python python3.11 \
+  --skip-redis-config-generation
 
 cd frappe-bench
 
-# 3. Pull your code from GitHub into the new bench
+# 3. Get your custom app
 bench get-app https://github.com/TejasBedarkar/Frabbe_Backend.git
 
-# 4. Create the site folder manually (since we don't run 'new-site')
+# 4. Create the site folder manually
 mkdir -p sites/magna.in
