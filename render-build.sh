@@ -6,7 +6,7 @@ pip install frappe-bench
 
 # 2. Build the Bench folder
 # We skip redis check because we connect to Render's internal Redis later
-bench init --skip-redis-config-check --python python3.11 frappe-bench
+bench init --skip-redis-config-generation --python python3.11 frappe-bench
 
 cd frappe-bench
 
